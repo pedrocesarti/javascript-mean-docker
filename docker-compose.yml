@@ -1,0 +1,24 @@
+codersa:
+  build: ./sampleapp
+  volumes:
+   - app:/app
+  expose:
+    - 5000
+
+codersb:
+  build: ./sampleapp
+  volumes:
+   - app:/app
+  expose:
+    - 5000
+
+loadbalancer:
+  build: ./haproxy
+  links:
+   - codersa
+   - codersb
+  ports:
+   - "5000:80"
+
+  expose:
+   - "80"

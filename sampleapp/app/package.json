@@ -1,0 +1,10 @@
+{
+  "name": "node-hello-world",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Usando Docker e Node.",
+  "author": "Pedro Azevedo",
+  "dependencies": {
+    "express": "4.12.0"
+  }
+}
