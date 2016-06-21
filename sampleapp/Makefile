@@ -8,7 +8,7 @@ run_one:
 run_two:
 	docker run --name codersb -v $(cur-dir)/app:/app -d app-node
 run_both:
-	docker run --name codersa -v $(cur-dir)/app:/app -d app-node
-	docker run --name codersb -v $(cur-dir)/app:/app -d app-node
+	docker run --name codersa -h codersa -v $(cur-dir)/app:/app -d app-node
+	docker run --name codersb -h codersb -v $(cur-dir)/app:/app -d app-node
 remove:
 	docker rm -f `docker ps -a -q`
