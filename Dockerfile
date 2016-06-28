@@ -8,4 +8,4 @@ WORKDIR /app
 RUN npm install 
 RUN npm install -g pm2
 
-CMD pm2 start index.js --no-daemon
+CMD pm2 start index.js -i max --no-daemon
