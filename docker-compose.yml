@@ -22,3 +22,4 @@ loadbalancer:
 
   expose:
    - "80"
+
