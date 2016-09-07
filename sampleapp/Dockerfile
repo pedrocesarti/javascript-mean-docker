@@ -2,7 +2,7 @@ FROM node:4
 
 EXPOSE 5000
 
-#COPY app /app
+COPY app /app
 WORKDIR /app
 
 RUN npm install -g pm2
