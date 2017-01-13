@@ -5,6 +5,7 @@
   "description": "Usando Docker e Node.",
   "author": "Pedro Azevedo",
   "dependencies": {
-    "express": "4.12.0"
+    "express": "4.12.0",
+    "pm2": "2.2.3"
   }
 }
