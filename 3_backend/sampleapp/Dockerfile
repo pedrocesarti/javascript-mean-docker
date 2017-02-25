@@ -7,4 +7,4 @@ WORKDIR /app
 
 RUN npm install -g pm2
 
-CMD bash start_environment.sh
+CMD ls
